@@ -1,23 +1,51 @@
 aid: atavistikbio
+
 name: Atavistikbio
-description: 'Atavistikbio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Atavistikbio is a biotechnology company identified in the API Evangelist secondary-market harvest. While detailed public information is limited, the company appears to focus on advanced biological research and development, aiming to provide innovative solutions in the life sciences sector. Further investigation is required to uncover its product offerings, partnerships, and official web presence.'
+
 url: https://raw.githubusercontent.com/api-evangelist/atavistikbio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Life Sciences
+- Research
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/atavistikbio-hosts.yml
+- type: Vendors
+  url: vendors/atavistikbio-vendors.yml
+- type: DomainSecurity
+  url: security/atavistikbio-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/atavistikbio
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
